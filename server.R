@@ -9,7 +9,7 @@ shinyServer(
         output$inputratevalue <- renderPrint({input$rate})
         output$inputyearsvalue <- renderPrint({input$years})
         output$inputdepositvalue <- renderPrint({input$deposit})
-        output$FV <- renderPrint({FV(input$rate,input$years, input$deposit)})
+        output$FV <- renderPrint(round({FV(input$rate,input$years, input$deposit)}))
         
     } 
 )

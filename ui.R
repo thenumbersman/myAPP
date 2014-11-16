@@ -5,7 +5,7 @@ shinyUI
     pageWithSidebar
     (
         # Application title
-        headerPanel("Dynamic Future Value Financial Calculator"),
+        headerPanel('"Dynamic" Future Value Financial Calculator'),
         
         sidebarPanel
         (
@@ -17,8 +17,8 @@ shinyUI
         mainPanel
         (
             p('This financial calculator returns the future value (FV) of an investment based on the following:'),
-            p('A constant dollar amount invested/deposited at the end of each year for a number of years.'),
-            p('The investment/deposit will earn a constant annual rate of interest over the investment period.'),            
+            p('A constant dollar amount deposited/invested at the end of each year for a number of years.'),
+            p('The deposit/investment will earn a constant annual rate of interest over the investment period.'),            
             p('Please note: All fields must be entered and entered as specified to avoid NA or NaN type values.'),
             h4('Taking into account the values entered by default or by you:'), 
             p('Rate:'), verbatimTextOutput("inputratevalue"),
